@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Wellspring Leaders Survey 2021</title>
+  </head>
+  <body>
+    <header>
+      <img src="/img/wellspring-logo.png">
+      <h1>Wellspring Leaders Survey</h1>
+    </header>
+
+    <main>
+      <h2>Submitter Info</h2>
+
+      <p>
+        Please share your information so we know who this nomination is from.
+      </p>
+
+      <form method="get" action="/nominee-info.html">
+        <p>
+          <label class="above" for="submitter_name">Your Name</label>
+          <input type="text" name="submitter_name" id="submitter_name" required size="35">
+        </p>
+
+        <p>
+          <label class="above" for="submitter_email">Your Email</label>
+          <input type="email" name="submitter_email" id="submitter_email" required size="35">
+        </p>
+
+        <br>
+        <p>
+          <button type="button" onclick="history.back()">Back</button>
+          <button type="submit">Continue to Nominee Info</button>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css?v=2">
+    <title>Wellspring Leaders Survey 2021</title>
+  </head>
+  <body>
+    <header>
+      <img src="/img/wellspring-logo.png">
+      <h1>Wellspring Leaders Survey</h1>
+    </header>
+
+    <main>
+      <h2>Nominee Info</h2>
+
+      <p>
+        Now tell us who you are nominating and why. You will be able to submit
+        additional nominations on the next page.
+      </p>
+
+      <form method="get" action="/success.html">
+        <p>
+          <label class="above" for="nominee_name">Name</label>
+          <input type="text" name="nominee_name" id="nominee_name" required size="35">
+        </p>
+
+        <p>
+          <label class="above">
+            What positions do you recommend this candidate for?<br>
+          </label>
+          <label class="inline">
+            <input type="checkbox" name="nominee_roles" value="Elder">
+            Elder
+          </label>
+          <label class="inline">
+            <input type="checkbox" name="nominee_roles" value="GB Member at Large">
+            GB Member at Large
+          </label>
+          <label class="inline">
+            <input type="checkbox" name="nominee_roles" value="Treasurer">
+            Treasurer
+          </label>
+          <label class="inline">
+            <input type="checkbox" name="nominee_roles" value="Financial Secretary">
+            Financial Secretary
+          </label>
+          <label class="inline">
+            <input type="checkbox" name="nominee_roles" value="Secretary">
+            Secretary
+          </label>
+          <label class="inline">
+            <input type="checkbox" name="nominee_roles" value="Deacon">
+            Deacon
+          </label>
+        </p>
+
+        <p>
+          <label class="above" for="">
+            Why do you recommend this candidate?
+          </label>
+          <textarea rows="8" required></textarea>
+        </p>
+
+        <br>
+        <p>
+          <button type="button" onclick="history.back()">Back</button>
+          <button type="submit">Submit Nomination</button>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+html {
+  background-color: #f6f6f6;
+}
+
+body, input, textarea, button {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  line-height: 1.2;
+}
+
+body {
+  line-height: 1.2;
+  background-color: #ffffff;
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 1em 2em;
+}
+
+header img {
+  width: 70%;
+  max-width: 300px;
+  margin: auto;
+  display: block;
+}
+
+a.button, button {
+  padding: 6px 16px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  color: #333;
+  background-color: #efefef;
+  text-decoration: none;
+  cursor: default;
+}
+
+input, textarea {
+  padding: 6px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+label.above {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  font-size: 11pt;
+  margin-top: 2em;
+  margin-bottom: 1ex;
+}
+
+label.inline {
+  display: inline-block;
+  width: 200px;
+}
