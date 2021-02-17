@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
     <title>Wellspring 2021 Leaders Survey</title>
   </head>
   <body>
@@ -20,38 +21,43 @@
         additional nominations on the next page.
       </p>
 
-      <form method="get" action="success.html">
+      <form method="get" action="success.html" onSubmit="submitToGoogleSheet(this); return false;">
+        <input type="hidden" name="source">
+        <input type="hidden" name="submitter_name">
+        <input type="hidden" name="submitter_email">
+
         <p>
           <label class="above" for="nominee_name">Name</label>
-          <input type="text" name="nominee_name" id="nominee_name" required size="35">
+          <input type="text" name="nominee_name" id="nominee_name" autocomplete="off" required size="35">
         </p>
 
         <p>
           <label class="above">
             What positions do you recommend this candidate for?<br>
+            <input type="hidden" name="nominee_roles" id="nominee_roles">
           </label>
           <label class="inline">
-            <input type="checkbox" name="nominee_roles" value="Elder">
+            <input type="checkbox" name="roles" value="Elder">
             Elder
           </label>
           <label class="inline">
-            <input type="checkbox" name="nominee_roles" value="GB Member at Large">
+            <input type="checkbox" name="roles" value="GB Member at Large">
             GB Member at Large
           </label>
           <label class="inline">
-            <input type="checkbox" name="nominee_roles" value="Treasurer">
+            <input type="checkbox" name="roles" value="Treasurer">
             Treasurer
           </label>
           <label class="inline">
-            <input type="checkbox" name="nominee_roles" value="Financial Secretary">
+            <input type="checkbox" name="roles" value="Financial Secretary">
             Financial Secretary
           </label>
           <label class="inline">
-            <input type="checkbox" name="nominee_roles" value="Secretary">
+            <input type="checkbox" name="roles" value="Secretary">
             Secretary
           </label>
           <label class="inline">
-            <input type="checkbox" name="nominee_roles" value="Deacon">
+            <input type="checkbox" name="roles" value="Deacon">
             Deacon
           </label>
         </p>
@@ -60,13 +66,13 @@
           <label class="above" for="nomination_text">
             Why do you recommend this candidate?
           </label>
-          <textarea rows="8" name="nomination_text" id="nomination_text" required></textarea>
+          <textarea rows="8" name="nomination_text" id="nomination_text" autocomplete="off" required></textarea>
         </p>
 
         <br>
         <p>
           <button type="button" onclick="history.back()">Back</button>
-          <button type="submit">Submit Nomination</button>
+          <button type="submit" name="submit_button">Submit Nomination</button>
         </p>
       </form>
     </main>

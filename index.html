@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
     <title>Wellspring 2021 Leaders Survey</title>
   </head>
   <body>
@@ -69,9 +70,10 @@
       </p>
 
       <br>
-      <a class="button" href="submitter-info.html">
-        Continue to Nomination Form
-      </a>
+      <form method="get" action="submitter-info.html">
+        <input type="hidden" name="source">
+        <button type="submit">Continue to Nomination Form</button>
+      </form>
       <br><br>
 
     </main>

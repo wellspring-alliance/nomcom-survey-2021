@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
     <title>Wellspring 2021 Leaders Survey</title>
   </head>
   <body>
@@ -20,14 +21,16 @@
       </p>
 
       <form method="get" action="nominee-info.html">
+        <input type="hidden" name="source">
+
         <p>
           <label class="above" for="submitter_name">Your Name</label>
-          <input type="text" name="submitter_name" id="submitter_name" required size="35">
+          <input type="text" name="submitter_name" id="submitter_name" autocomplete="name" required size="35">
         </p>
 
         <p>
           <label class="above" for="submitter_email">Your Email</label>
-          <input type="email" name="submitter_email" id="submitter_email" required size="35">
+          <input type="email" name="submitter_email" id="submitter_email" autocomplete="email" required size="35">
         </p>
 
         <br>
