@@ -33,7 +33,10 @@
 
         <p>
           <label class="above">
-            What positions do you recommend this candidate for?<br>
+            What positions do you recommend this candidate for?
+            <span style="font-weight: normal; display: inline-block;">
+              <a onclick="document.getElementById('modal').style.display='block';return false;" href="#">view descriptions</a>
+            </span>
             <input type="hidden" name="nominee_roles" id="nominee_roles">
           </label>
           <label class="inline">
@@ -78,5 +81,12 @@
         </p>
       </form>
     </main>
+
+    <section id="modal">
+      <div class="content">
+        <a class="close_button" onclick="document.getElementById('modal').style.display='none';return false;" href="#">✕</a>
+        <iframe src="leadership_ministry_descriptions.html">
+      </div>
+    </section>
   </body>
 </html>

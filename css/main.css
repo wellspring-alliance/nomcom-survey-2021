@@ -92,3 +92,67 @@ label.inline {
   display: inline-block;
   width: 200px;
 }
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+}
+#modal .content {
+  position: relative;
+  box-sizing: border-box;
+  max-width: calc(650px + 4em);
+  height: 100%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+#modal .close_button {
+  position: absolute;
+  padding: 2px;
+  top: 0;
+  right: 0;
+  font-size: 18pt;
+  color: #f3f3f3;
+  text-decoration: none;
+}
+#modal iframe {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ministry-descriptions main {
+  margin-bottom: 2em;
+}
+.ministry-descriptions header img {
+  margin-left: 0;
+  width: 50%;
+  max-width: 200px;
+}
+.ministry-descriptions h1 {
+  color: #007cba;
+  font-size: 14pt;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.ministry-descriptions h2 {
+  color: #007cba;
+  font-size: 12pt;
+  margin-bottom: 0.5ex;
+}
+.ministry-descriptions h2 span {
+  display: inline-block;
+  font-weight: normal;
+  color: #666666;
+}
+.ministry-descriptions p {
+  margin-top: 0;
+}

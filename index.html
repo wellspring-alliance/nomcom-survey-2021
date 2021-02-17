@@ -19,7 +19,7 @@
         leadership, we would like to ask you for your help. For a brief
         description of the elected positions to help you see the leadership
         roles for which we are providing nominees, click
-        <a href="https://drive.google.com/file/d/1ghyB7XPrXqgcy4eZjtcUpTQcJxosPJU0/view" target="_blank">here</a>.
+        <a onclick="document.getElementById('modal').style.display='block';return false;" href="#">here</a>
       </p>
 
       <p>
@@ -75,7 +75,13 @@
         <button type="submit">Continue to Nomination Form</button>
       </form>
       <br><br>
-
     </main>
+
+    <section id="modal">
+      <div class="content">
+        <a class="close_button" onclick="document.getElementById('modal').style.display='none';return false;" href="#">✕</a>
+        <iframe src="leadership_ministry_descriptions.html">
+      </div>
+    </section>
   </body>
 </html>
