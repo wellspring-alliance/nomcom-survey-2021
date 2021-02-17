@@ -15,7 +15,7 @@ function setFieldsFromParams(elements, queryString) {
 }
 
 function serializeCheckboxes(nodes) {
-  return [...nodes].filter(n => n.checked).map(n => n.value).join(', ');
+  return [...nodes].filter(n => n.checked).map(n => n.value).join('\n');
 }
 
 async function submitToGoogleSheet(form) {
